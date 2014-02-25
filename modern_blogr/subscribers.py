@@ -15,8 +15,8 @@ def _make_archives(entries):
     for ((year, month), items) in groupby(entries, key=grouper):
         fullname = "%s %s" % (month_name[month], year)
         archives.append({'year': "%d" % year,
-        				 'month': "%02d" % month,
-        				 'fullname': fullname})
+                         'month': "%02d" % month,
+                         'fullname': fullname})
     return archives
 
 
