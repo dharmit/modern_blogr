@@ -28,6 +28,7 @@
     tinymce.init({
         selector: "textarea",
         plugins: "link image",
+        toolbar: "undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent",
         language: "${request.locale_name}"
      });
     </script>
