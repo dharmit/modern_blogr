@@ -41,14 +41,6 @@
               <a class="blog-nav-item" href="${href}">${caption}</a>
             % endif
           % endfor
-
-          % if logged_in:
-            <a class="blog-nav-item navbar-right" href="/logout">Logout</a>
-            <a class="blog-nav-item navbar-right" href="/blog/create">New Entry</a>
-          % else:
-            <a class="blog-nav-item navbar-right" href="/login">Login</a>
-          % endif
-
         </nav>
       </div>
     </div>
@@ -87,6 +79,17 @@
               <li><a href="#">GitHub</a></li>
               <li><a href="#">Twitter</a></li>
               <li><a href="#">Facebook</a></li>
+            </ol>
+          </div>
+          <div class="sidebar-module">
+            <h4>Meta</h4> 
+            <ol class="list-unstyled">
+            % if logged_in:
+              <li><a href="/blog/create">New Entry</a></li>
+              <li><a href="/logout">Logout</a></li>
+            % else:
+              <li><a href="/login">Login</a></li>
+            % endif
             </ol>
           </div>
         </div><!-- /.blog-sidebar -->
