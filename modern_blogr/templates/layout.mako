@@ -21,18 +21,6 @@
       <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
     <![endif]-->
-
-    <!-- TinyMCE -->
-    <script type="text/javascript" src="/static/tinymce/tinymce.min.js"></script>
-    <script type="text/javascript">
-    tinymce.init({
-        selector: "textarea",
-        plugins: "link image",
-        toolbar: "undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent",
-        language: "${request.locale_name}"
-     });
-    </script>
-
   </head>
 
   <body>
@@ -120,5 +108,15 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="//oss.maxcdn.com/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="//oss.maxcdn.com/libs/twitter-bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <!-- TinyMCE -->
+    <script type="text/javascript" src="/static/tinymce/tinymce.min.js"></script>
+    <script type="text/javascript">
+    tinymce.init({
+        selector: "textarea",
+        plugins: "link image",
+        toolbar: "undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent",
+        language: "${request.locale_name}"
+     });
+    </script>
   </body>
 </html>
